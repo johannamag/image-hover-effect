@@ -1,8 +1,8 @@
 * {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -53,4 +53,25 @@ body {
 
 .container .clip:hover {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container .clip .content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 70%;
+  padding: 20px;
+  background: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .clip:hover .content {
+  bottom: 0;
+  opacity: 1;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 5px;
 }
